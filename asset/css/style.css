@@ -1,5 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Oswald:wght@700&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
-body{
+
+
+:root{
+
+    --bright-red: hsl(12, 88%, 59%);
+    --dark-blue: hsl(228, 39%, 23%);
+    --dark-grayish-blue: hsl(227, 12%, 61%);
+    --very-dark-blue: hsl(233, 12%, 13%);
+    --very-pale-red: hsl(13, 100%, 96%);
+    --vary-light-gray: hsl(0, 0%, 98%);
+
 
 }
+body{
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+ul, ol {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var();
+}
+a{
+    text-decoration: none;
+    color: var(--very-light-blue);
+}
+a:hover{
+    color: var(--dark-grayish-blue);
+}
+button, a {
+    transition: all 0.3ms ease-in-out;
+}
+.btn{
+    border: 0;
+    background-color: var(--very-light-gray);
+    padding: 12px, 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    z-index: 1;
+}
+.btn-primary{
+    background-color: var(--bright-red);
+    color: beige;
+    box-shadow: 0 0 0 ;
+
+}
+.btn-primary:hover{
+    opacity: 0.7;
+   
+}
+
+.d-flex{
+ display: flex;
+
+}
+.items-center{
+    align-items: center;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* header */
+header{
+  padding-top: 20px;
+  /* height: 100px;
+  margin-bottom: 25px; */
+
+}
+.header-wrapper{
+   
+    
+    justify-content: space-between;
+}
+.primary-menu{
+    
+}
+.primary-menu li a{
+    padding-right: 6px;
+    padding-left: 6px;
+}
+.row{
+   
+   
+}
+.col-left .col-right{
+    width: 50%;
+
+}
+.col-left{
+    
+}
+    
+.col-right{
+   
+}
+
+
+ /* Hero section */
+
+ .hero{
+     padding-top: 100px;
+     padding-bottom: 100px;
+ }
+ .bg-pattern{
+     position: absolute;
+     top: -120px;
+     right: -36px;
+     z-index: 0;
+ }
+ .hero-heading{
+    font-size: 52px;
+    margin-bottom: 30px;
+    line-height: 1,2;
+ }
+ .hero-text{
+     color: var(--dark-grayish-blue);
+     margin-bottom: 30px;
+ }
+ .hero-image{
+     margin-right: -20px;
+     z-index: 2;
+     position: relative;
+     text-align: right;
+ }
+ /* About section */
+ .about h2{
+     font-size: 40px;
+ }
