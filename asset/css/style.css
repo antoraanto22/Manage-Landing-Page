@@ -16,7 +16,8 @@
 body{
     font-size: 16px;
     font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(173, 110, 110);
+    overflow-x: hidden;
     
 }
 
@@ -65,6 +66,10 @@ button, a {
 .container{
     width: 1170px;
     margin: 0 auto;
+}
+.section-heading{
+    text-align: center;
+    margin-bottom: 150px;
 }
 
 /* header */
@@ -134,3 +139,44 @@ header{
  .about h2{
      font-size: 40px;
  }
+  /* testimonial */
+
+  .testimonials{
+      /* display: grid; */
+      gap: 20px;
+  }
+  .testimonial{
+      background-color: var(--very-light-gray);
+      
+      padding: 25px;
+      /* margin-right: 10px;
+      margin-left: 12px; */
+      border-radius: 5px;
+      text-align: center; 
+      position: relative;
+       /* display: flex; */
+      /* flex-direction: column-reverse;
+      justify-content: center;
+   */ 
+    
+  }
+   
+  /* .testimonial:first-child{
+      margin-left: 0;
+  }
+  .testimonial:last-child{
+   margin-right: 0;
+
+  } */
+  .testimonial img{
+      position: absolute;
+      top: -25%;
+      
+      transform: translateX(-50%);
+      width: 80px;
+  }
+  .testimonial h4{
+      margin-top: 30px;
+      margin-bottom: 20px;
+  }
+  
