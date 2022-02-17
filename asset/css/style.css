@@ -5,6 +5,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html, body{
+    overflow-x: hidden;
+
+}
 
 :root{
     --bright-red: hsl(12, 88%, 59%);
@@ -20,7 +24,7 @@ body{
     font-size: 16px;
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: var(--vary-light-gray);
-    overflow-x: hidden;
+    position: relative;
 
 }
 
@@ -42,6 +46,9 @@ a:hover{
 }
 button, a {
     transition: all 0.3ms ease-in-out;
+}
+img{
+    width: 100%;
 }
 .btn{
     border: 0;
@@ -118,7 +125,9 @@ header{
     width: 50%;
 
 }
-.col-left{}  
+.col-left{ 
+    /* text-align: center; */
+}  
 .col-right{}
    
 
@@ -133,6 +142,7 @@ header{
      top: -120px;
      right: -36px;
      z-index: 0;
+     width: 400px;
  }
  .hero-heading{
     font-size: 52px;
@@ -295,5 +305,83 @@ header{
   .subscription:focus{
       outline: none;
   }
-  
+
+  /* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .container{
+        width: 1000px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .container{
+        width: 768px;
+    }
+    header{
+        padding-top: 40px;
+    }
+    .header-wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
    
+    
+    .hero-heading{
+        font-size: 32px;
+    }
+    .hero .row{
+        flex-direction: column-reverse;
+    }
+    .hero-image{
+        margin-bottom: 20px;
+    }
+    .hero .col-left{
+        text-align: center;
+    }
+    .about .row{
+        flex-direction: column;
+    }
+    .about .about-containt{
+        padding-right: 0;
+    }
+    .about .col-left{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .about{} 
+
+    }
+    /* .logo, nav{
+        margin-bottom: 20px;
+    } */
+
+  /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* 
+ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    header{
+      
+    }
+ 
+/* 
+ XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
+
+@media (max-width: 1400px) {
+    .bg-pattern{
+        width: 300px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .bg-pattern{
+        width: 300px;
+    }
+}
+ 
