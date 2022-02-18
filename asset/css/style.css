@@ -345,29 +345,84 @@ header{
     .about .about-containt{
         padding-right: 0;
     }
-    .about .col-left{
+    .about .col-left,
+    .about .col-right {
         width: 100%;
+    }
+    .about .col-left{
         text-align: center;
         margin-bottom: 30px;
-    }
-    .about{} 
 
     }
+    .about .about-card{
+      justify-content: center;
+    }
+    .testimonial-wrapper .row{
+        flex-wrap: wrap;
+    }
+    .testimonial-wrapper .testimonial{
+       min-width: 250px;
+       flex: 0.5;
+       margin-bottom: 60px;
+    }
+    .testimonial img{
+        top: -20%;
+    }
+    .call-to-action h2{
+        font-size: 25px;
+    }
+    
     /* .logo, nav{
         margin-bottom: 20px;
     } */
 
   /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (max-width: 768px) { 
+    .col-left, .col-right{
+        width: 100%;
+    }
+    .call-to-action .row{
+        flex-direction: column;
+    }
+   .call-to-action .col-left, .call-to-action .col-right{
+       width: 50%;
+       text-align: center;
+   }
+   .call-to-action .col-left{
+       margin-bottom: 30px;
+   }
+   .footer-wrapeer .row{
+       flex-direction: column;
+       padding-right: 15px;
+       padding-left: 15px;
+       align-items: center;
 
+   } 
+   .footer-wrapeer .col {
+       max-width: 300px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+   } 
+   .footer-wrapeer .col ul{
+       gap: 15px;
+
+   } 
+   .footer-wrapeer{} 
 }
+
 
 /* 
  Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    header{
-      
+@media (max-width: 576px) {
+    .testimonial-wrapper .testimonial{
+        width: 100%;
+       flex: 1;
+       margin: 0 30px 60px;
     }
+}
  
 /* 
  XX-Large devices (larger desktops, 1400px and up) */
